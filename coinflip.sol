@@ -8,9 +8,9 @@ contract HackFlip {
     uint256 public consecutiveWins = 0;
     uint256 lastHash;
     uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
-    address target;
+    address public target;
 
-    function setTarget(address _address) public {
+    function setTarget(address _address) external {
       target = _address;
     }
 
